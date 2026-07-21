@@ -1,0 +1,1 @@
+Coloca en esta carpeta tus imágenes: favicon.png, hero-tech.webp, brand-banner.webp y cualquier otra que desees agregar.
