@@ -5,18 +5,18 @@
   const currency = new Intl.NumberFormat('es-PE', { style: 'currency', currency: 'PEN' });
 
   const products = [
-    { id: 1, name: 'Laptop para estudio y oficina', category: 'computo', categoryLabel: 'Cómputo', icon: 'laptop', tag: 'Recomendado', price: 1699, description: 'Equipo equilibrado para clases, documentos, videollamadas y trabajo diario.' },
-    { id: 2, name: 'PC de escritorio optimizada', category: 'computo', categoryLabel: 'Cómputo', icon: 'monitor', tag: 'Por pedido', price: 1890, description: 'Configuración personalizable con componentes seleccionados según tu uso.' },
-    { id: 3, name: 'Unidad SSD 1 TB', category: 'componentes', categoryLabel: 'Componentes', icon: 'drive', tag: 'Más velocidad', price: 279, description: 'Mejora el arranque, la apertura de programas y la respuesta general del equipo.' },
-    { id: 4, name: 'Memoria RAM 16 GB', category: 'componentes', categoryLabel: 'Componentes', icon: 'cpu', tag: 'Upgrade', price: 199, description: 'Más capacidad para multitarea, navegación y aplicaciones exigentes.' },
-    { id: 5, name: 'Combo teclado y mouse', category: 'perifericos', categoryLabel: 'Periféricos', icon: 'box', tag: 'Práctico', price: 89, description: 'Conjunto cómodo para oficina, hogar o centro de estudios.' },
-    { id: 6, name: 'Audífonos con micrófono', category: 'perifericos', categoryLabel: 'Periféricos', icon: 'headset', tag: 'Videollamadas', price: 119, description: 'Audio claro para clases, reuniones, juegos y atención al cliente.' },
-    { id: 7, name: 'Router Wi-Fi doble banda', category: 'conectividad', categoryLabel: 'Conectividad', icon: 'wifi', tag: 'Cobertura', price: 169, description: 'Conexión estable para varios dispositivos y mejor distribución de señal.' },
-    { id: 8, name: 'Adaptador Wi-Fi USB', category: 'conectividad', categoryLabel: 'Conectividad', icon: 'wifi', tag: 'Fácil instalación', price: 59, description: 'Añade o mejora la conectividad inalámbrica de una computadora.' },
-    { id: 9, name: 'Monitor Full HD 24”', category: 'perifericos', categoryLabel: 'Periféricos', icon: 'monitor', tag: 'Productividad', price: 579, description: 'Área de trabajo amplia para oficina, estudio, programación y entretenimiento.' },
-    { id: 10, name: 'Kit de mantenimiento PC', category: 'componentes', categoryLabel: 'Componentes', icon: 'wrench', tag: 'Servicio', price: 79, description: 'Limpieza preventiva y revisión básica realizada por nuestro equipo técnico.' },
-    { id: 11, name: 'Mini UPS para router', category: 'conectividad', categoryLabel: 'Conectividad', icon: 'shield', tag: 'Respaldo', price: 139, description: 'Mantiene la conexión de red ante interrupciones eléctricas breves.' },
-    { id: 12, name: 'Webcam Full HD', category: 'perifericos', categoryLabel: 'Periféricos', icon: 'monitor', tag: 'Clases y reuniones', price: 129, description: 'Imagen nítida para videollamadas, transmisiones y reuniones virtuales.' }
+    { id: 1, name: 'Laptop para estudio y oficina', category: 'computo', categoryLabel: 'Cómputo', icon: 'laptop', image: 'assets/laptop-real.webp', imageAlt: 'Laptop moderna sobre un escritorio', imagePosition: '50% 58%', tag: 'Recomendado', price: 1699, description: 'Equipo equilibrado para clases, documentos, videollamadas y trabajo diario.' },
+    { id: 2, name: 'PC de escritorio optimizada', category: 'computo', categoryLabel: 'Cómputo', icon: 'monitor', image: 'assets/hero-real.webp', imageAlt: 'Estación de computadoras con iluminación tecnológica', imagePosition: '42% 50%', tag: 'Por pedido', price: 1890, description: 'Configuración personalizable con componentes seleccionados según tu uso.' },
+    { id: 3, name: 'Unidad SSD 1 TB', category: 'componentes', categoryLabel: 'Componentes', icon: 'drive', image: 'assets/ssd-real.webp', imageAlt: 'Unidad de almacenamiento SSD M.2', imagePosition: '50% 50%', tag: 'Más velocidad', price: 279, description: 'Mejora el arranque, la apertura de programas y la respuesta general del equipo.' },
+    { id: 4, name: 'Memoria RAM 16 GB', category: 'componentes', categoryLabel: 'Componentes', icon: 'cpu', image: 'assets/repair-real.webp', imageAlt: 'Componentes internos de una laptop durante su mantenimiento', imagePosition: '55% 62%', tag: 'Upgrade', price: 199, description: 'Más capacidad para multitarea, navegación y aplicaciones exigentes.' },
+    { id: 5, name: 'Combo teclado y mouse', category: 'perifericos', categoryLabel: 'Periféricos', icon: 'box', image: 'assets/peripherals-real.webp', imageAlt: 'Teclado mecánico y mouse para computadora', imagePosition: '52% 52%', tag: 'Práctico', price: 89, description: 'Conjunto cómodo para oficina, hogar o centro de estudios.' },
+    { id: 6, name: 'Audífonos con micrófono', category: 'perifericos', categoryLabel: 'Periféricos', icon: 'headset', image: 'assets/headset-real.webp', imageAlt: 'Audífonos y teclado en una estación de tecnología', imagePosition: '50% 34%', tag: 'Videollamadas', price: 119, description: 'Audio claro para clases, reuniones, juegos y atención al cliente.' },
+    { id: 7, name: 'Router Wi-Fi doble banda', category: 'conectividad', categoryLabel: 'Conectividad', icon: 'wifi', image: 'assets/router-real.webp', imageAlt: 'Router inalámbrico moderno con cuatro antenas', imagePosition: '50% 53%', tag: 'Cobertura', price: 169, description: 'Conexión estable para varios dispositivos y mejor distribución de señal.' },
+    { id: 8, name: 'Adaptador Wi-Fi USB', category: 'conectividad', categoryLabel: 'Conectividad', icon: 'wifi', image: 'assets/router-real.webp', imageAlt: 'Equipo de conectividad inalámbrica', imagePosition: '72% 46%', tag: 'Fácil instalación', price: 59, description: 'Añade o mejora la conectividad inalámbrica de una computadora.' },
+    { id: 9, name: 'Monitor Full HD 24”', category: 'perifericos', categoryLabel: 'Periféricos', icon: 'monitor', image: 'assets/hero-real.webp', imageAlt: 'Monitores en una estación tecnológica', imagePosition: '20% 46%', tag: 'Productividad', price: 579, description: 'Área de trabajo amplia para oficina, estudio, programación y entretenimiento.' },
+    { id: 10, name: 'Kit de mantenimiento PC', category: 'componentes', categoryLabel: 'Componentes', icon: 'wrench', image: 'assets/diagnostic-real.webp', imageAlt: 'Diagnóstico electrónico de componentes de computadora', imagePosition: '55% 52%', tag: 'Servicio', price: 79, description: 'Limpieza preventiva y revisión básica realizada por nuestro equipo técnico.' },
+    { id: 11, name: 'Mini UPS para router', category: 'conectividad', categoryLabel: 'Conectividad', icon: 'shield', image: 'assets/router-real.webp', imageAlt: 'Router para conexión de red doméstica', imagePosition: '38% 54%', tag: 'Respaldo', price: 139, description: 'Mantiene la conexión de red ante interrupciones eléctricas breves.' },
+    { id: 12, name: 'Webcam Full HD', category: 'perifericos', categoryLabel: 'Periféricos', icon: 'monitor', image: 'assets/laptop-real.webp', imageAlt: 'Laptop preparada para videollamadas y trabajo remoto', imagePosition: '54% 38%', tag: 'Clases y reuniones', price: 129, description: 'Imagen nítida para videollamadas, transmisiones y reuniones virtuales.' }
   ];
 
   const trackingData = {
@@ -58,6 +58,31 @@
     cart: loadCart()
   };
 
+  function getInitialTheme() {
+    try {
+      return localStorage.getItem('compunix-theme') === 'dark' ? 'dark' : 'light';
+    } catch {
+      return 'light';
+    }
+  }
+
+  function applyTheme(theme, persist = true) {
+    const selected = theme === 'dark' ? 'dark' : 'light';
+    document.documentElement.dataset.theme = selected;
+    const isDark = selected === 'dark';
+    const toggle = $('#themeToggle');
+    const label = isDark ? 'Activar modo claro' : 'Activar modo oscuro';
+    toggle?.setAttribute('aria-label', label);
+    toggle?.setAttribute('title', label);
+    const labelNode = $('#themeToggleLabel');
+    if (labelNode) labelNode.textContent = label;
+    const themeMeta = document.querySelector('meta[name="theme-color"]');
+    themeMeta?.setAttribute('content', isDark ? '#050b14' : '#f4f8fc');
+    if (persist) {
+      try { localStorage.setItem('compunix-theme', selected); } catch {}
+    }
+  }
+
   function loadCart() {
     try {
       const stored = JSON.parse(localStorage.getItem('compunix-cart') || '[]');
@@ -95,7 +120,8 @@
       <article class="product-card reveal visible">
         <div class="product-visual">
           <span class="product-tag">${product.tag}</span>
-          ${iconMarkup(product.icon)}
+          <img src="${product.image}" alt="${product.imageAlt}" loading="lazy" decoding="async" style="object-position:${product.imagePosition || '50% 50%'}">
+          <span class="product-image-shade" aria-hidden="true"></span>
         </div>
         <div class="product-info">
           <span class="product-category">${product.categoryLabel}</span>
@@ -156,7 +182,7 @@
     count.textContent = String(totalQuantity);
     itemsContainer.innerHTML = detailedItems.map(item => `
       <article class="cart-item">
-        <div class="cart-thumb">${iconMarkup(item.product.icon)}</div>
+        <div class="cart-thumb"><img src="${item.product.image}" alt="" loading="lazy" decoding="async"></div>
         <div>
           <h4>${item.product.name}</h4>
           <p>${currency.format(item.product.price)} c/u</p>
@@ -299,6 +325,10 @@
 
   function initEvents() {
     const header = $('.site-header');
+    $('#themeToggle')?.addEventListener('click', () => {
+      const nextTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      applyTheme(nextTheme);
+    });
     const updateHeader = () => header?.classList.toggle('scrolled', window.scrollY > 14);
     updateHeader();
     window.addEventListener('scroll', updateHeader, { passive: true });
@@ -414,6 +444,7 @@
   }
 
   function init() {
+    applyTheme(getInitialTheme(), false);
     const year = $('#currentYear');
     if (year) year.textContent = new Date().getFullYear();
     renderProducts();

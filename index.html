@@ -1,15 +1,21 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#050b14">
+  <meta name="theme-color" content="#f4f8fc">
   <meta name="description" content="CompuNix: venta de equipos, licencias originales, reparación, mantenimiento y soporte técnico remoto.">
   <title>CompuNix | Tecnología que conecta</title>
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    try {
+      const savedTheme = localStorage.getItem('compunix-theme');
+      if (savedTheme === 'dark') document.documentElement.dataset.theme = 'dark';
+    } catch (_) {}
+  </script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -43,6 +49,8 @@
     <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
     <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M7 7l1 14h8l1-14M10 11v6M14 11v6"/></symbol>
     <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14.1A8.5 8.5 0 0 1 9.9 3.5 8.5 8.5 0 1 0 20.5 14.1Z"/></symbol>
   </svg>
 
   <div class="page-noise" aria-hidden="true"></div>
@@ -63,6 +71,11 @@
       </nav>
 
       <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Activar modo oscuro" title="Activar modo oscuro">
+          <svg class="icon theme-icon-moon" aria-hidden="true"><use href="#i-moon"></use></svg>
+          <svg class="icon theme-icon-sun" aria-hidden="true"><use href="#i-sun"></use></svg>
+          <span class="sr-only" id="themeToggleLabel">Activar modo oscuro</span>
+        </button>
         <button class="cart-button" id="openCart" type="button" aria-label="Abrir carrito">
           <svg class="icon"><use href="#i-bag"></use></svg>
           <span class="cart-count" id="cartCount">0</span>
@@ -110,7 +123,7 @@
 
         <div class="hero-visual reveal delay-1">
           <div class="visual-frame">
-            <img src="assets/hero-tech.webp" alt="Laptop, computadora gamer y periféricos de CompuNix">
+            <img src="assets/hero-real.webp" alt="Estación moderna con computadoras y equipos tecnológicos">
             <div class="visual-overlay"></div>
             <div class="status-card status-top">
               <span class="pulse-dot"></span>
@@ -145,7 +158,8 @@
         </div>
 
         <div class="service-grid">
-          <article class="service-card featured reveal">
+          <article class="service-card featured with-photo reveal">
+            <div class="service-photo"><img src="assets/repair-real.webp" alt="Técnico realizando mantenimiento interno de una laptop" loading="lazy" decoding="async"></div>
             <div class="service-icon"><svg class="icon"><use href="#i-wrench"></use></svg></div>
             <span class="service-number">01</span>
             <h3>Reparación y mantenimiento</h3>
