@@ -2,14 +2,14 @@
 <html lang="es" data-theme="light">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f4f8fc"><meta name="description" content="Venta de equipos, reparación, licencias originales y soporte técnico remoto en CompuNix.">
-  <title>CompuNix | Tecnología que conecta</title><link rel="icon" type="image/png" href="assets/favicon.png">
+  <meta name="theme-color" content="#f4f8fc"><meta name="description" content="Asistencia remota para programas, Windows, impresoras, drivers, correo y optimización.">
+  <title>Soporte técnico remoto | CompuNix</title><link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
   <script>try{const savedTheme=localStorage.getItem('compunix-theme');if(savedTheme==='dark')document.documentElement.dataset.theme='dark';}catch(_){}</script>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body data-page="inicio">
+<body data-page="servicios">
   <svg aria-hidden="true" class="svg-sprite">
 <symbol id="i-menu" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></symbol>
 <symbol id="i-x" viewbox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"></path></symbol>
@@ -50,7 +50,7 @@
         <span class="brand-mark" aria-hidden="true"><span>C</span></span>
         <span class="brand-word">Compu<span>Nix</span></span>
       </a>
-      <nav class="main-nav" id="mainNav" aria-label="Navegación principal"><a href="index.html" class="active" aria-current="page">Inicio</a><a href="servicios.html">Servicios</a><a href="tienda.html">Tienda</a><a href="licencias.html">Licencias</a><a href="seguimiento.html">Seguimiento</a><a href="contacto.html">Contacto</a></nav>
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="servicios.html" class="active" aria-current="page">Servicios</a><a href="tienda.html">Tienda</a><a href="licencias.html">Licencias</a><a href="seguimiento.html">Seguimiento</a><a href="contacto.html">Contacto</a></nav>
       <div class="nav-actions">
         <button class="theme-toggle" id="themeToggle" type="button" aria-label="Activar modo oscuro" title="Activar modo oscuro">
           <svg class="icon theme-icon-moon" aria-hidden="true"><use href="#i-moon"></use></svg>
@@ -69,84 +69,43 @@
       </div>
     </div>
   </header>
-  <main><section class="hero" id="inicio">
-<div aria-hidden="true" class="hero-glow glow-one"></div>
-<div aria-hidden="true" class="hero-glow glow-two"></div>
-<div class="container hero-grid">
-<div class="hero-content reveal">
-<div class="eyebrow"><span></span> Soluciones tecnológicas para personas y negocios</div>
-<h1>Tu tecnología, <span>lista para rendir.</span></h1>
-<p class="hero-lead">Venta de equipos y accesorios, licencias originales, reparación especializada y soporte remoto seguro desde un solo lugar.</p>
-<p class="slogan">“Tecnología que conecta, soluciones que impulsan.”</p>
-<div class="hero-actions">
-<a class="btn btn-primary" href="https://wa.me/51999999999?text=Hola%20CompuNix%2C%20necesito%20ayuda%20con%20mi%20equipo" rel="noopener" target="_blank">
-<svg class="icon"><use href="#i-whatsapp"></use></svg>
-              Hablar con un técnico
-            </a>
-<a class="btn btn-ghost" href="tienda.html">Explorar productos <svg class="icon"><use href="#i-arrow"></use></svg></a>
-</div>
-<div class="hero-proof">
-<div class="proof-item">
-<span class="proof-icon"><svg class="icon"><use href="#i-shield"></use></svg></span>
-<div><strong>Atención confiable</strong><small>Diagnóstico claro y directo</small></div>
-</div>
-<div class="proof-item">
-<span class="proof-icon"><svg class="icon"><use href="#i-clock"></use></svg></span>
-<div><strong>Respuesta rápida</strong><small>Presencial y remota</small></div>
-</div>
-</div>
-</div>
-<div class="hero-visual reveal delay-1">
-<div class="visual-frame">
-<img alt="Estación moderna con computadoras y equipos tecnológicos" src="assets/hero-real.webp"/>
-<div class="visual-overlay"></div>
-<div class="status-card status-top">
-<span class="pulse-dot"></span>
-<div><strong>Soporte disponible</strong><small>Atención por WhatsApp</small></div>
-</div>
-<div class="status-card status-bottom">
-<svg class="icon"><use href="#i-spark"></use></svg>
-<div><strong>Equipos optimizados</strong><small>Más velocidad y estabilidad</small></div>
+  <main><section class="page-hero">
+      <div class="page-hero-glow" aria-hidden="true"></div>
+      <div class="container page-hero-grid">
+        <div class="page-hero-copy reveal">
+          <div class="breadcrumbs"><a href="index.html">Inicio</a><span>/</span><strong>Soporte remoto</strong></div>
+          <span class="section-kicker">Soporte remoto</span>
+          <h1>Asistencia técnica <span>sin trasladarte.</span></h1>
+          <p>Atendemos problemas que pueden resolverse a distancia mediante una conexión temporal y autorizada.</p>
+          <div class="page-hero-actions"><a class="btn btn-primary" href="#solicitar">Solicitar sesión</a><a class="btn btn-ghost" href="#problemas">Ver servicios compatibles<svg class="icon"><use href="#i-arrow"></use></svg></a></div>
+        </div>
+        <div class="page-hero-media reveal delay-1"><img src="assets/hero-real.webp" alt="Estación moderna de trabajo con computadoras"><div class="page-hero-media-shade"></div></div>
+      </div>
+    </section><section class="section support-types" id="problemas"><div class="container"><div class="section-heading reveal"><div><span class="section-kicker">Problemas compatibles</span><h2>¿Qué podemos revisar a distancia?</h2></div><p>Cuando la falla requiere abrir el equipo o cambiar una pieza, te indicaremos que corresponde atención presencial.</p></div><div class="support-grid">
+<article class="support-card reveal"><svg class="icon"><use href="#i-box"></use></svg><h3>Programas</h3><p>Instalación, configuración, actualización y errores de aplicaciones.</p></article>
+<article class="support-card reveal delay-1"><svg class="icon"><use href="#i-monitor"></use></svg><h3>Windows</h3><p>Errores del sistema, arranque lento, ajustes y controladores.</p></article>
+<article class="support-card reveal delay-2"><svg class="icon"><use href="#i-wifi"></use></svg><h3>Impresoras y red</h3><p>Configuración de impresoras, conexión y problemas básicos de red.</p></article>
+<article class="support-card reveal"><svg class="icon"><use href="#i-headset"></use></svg><h3>Correo y cuentas</h3><p>Configuración de aplicaciones de correo y acceso a servicios.</p></article>
+</div></div></section><section class="section remote-section" id="solicitar">
+<div class="container remote-card reveal">
+<div aria-hidden="true" class="remote-visual">
+<div class="remote-screen">
+<div class="screen-bar"><span></span><span></span><span></span></div>
+<div class="screen-content">
+<svg class="icon"><use href="#i-headset"></use></svg>
+<div class="signal-lines"><i></i><i></i><i></i></div>
 </div>
 </div>
-<div class="orbit orbit-one"></div>
-<div class="orbit orbit-two"></div>
+</div>
+<div class="remote-copy">
+<span class="section-kicker">Asistencia a distancia</span>
+<h2>Solucionamos problemas sin que tengas que trasladar tu equipo.</h2>
+<p>Ideal para errores de programas, configuración, impresoras, controladores, correo, optimización y capacitación básica.</p>
+<div class="remote-tags"><span>Con autorización</span><span>Sesión supervisada</span><span>Conexión temporal</span></div>
+<button class="btn btn-primary" data-open-support="" type="button">Solicitar soporte remoto</button>
 </div>
 </div>
-<div class="container trust-strip reveal delay-2">
-<div><strong>Venta</strong><span>Equipos y periféricos</span></div>
-<div><strong>Reparación</strong><span>Laptops y computadoras</span></div>
-<div><strong>Licencias</strong><span>Software original</span></div>
-<div><strong>Soporte remoto</strong><span>Sin salir de casa</span></div>
-</div>
-</section><section class="section home-portals">
-  <div class="container">
-    <div class="section-heading reveal"><div><span class="section-kicker">Todo CompuNix</span><h2>Cada servicio tiene su propio espacio.</h2></div><p>Ahora la web está organizada por páginas para encontrar más rápido lo que necesitas.</p></div>
-    <div class="portal-grid">
-      <a class="portal-card reveal" href="servicios.html"><span class="portal-icon"><svg class="icon"><use href="#i-wrench"></use></svg></span><small>Servicios</small><h3>Soluciones técnicas</h3><p>Mantenimiento, redes, respaldos y optimización.</p><span class="text-link">Ver servicios <svg class="icon"><use href="#i-arrow"></use></svg></span></a>
-      <a class="portal-card reveal delay-1" href="reparacion.html"><span class="portal-icon"><svg class="icon"><use href="#i-cpu"></use></svg></span><small>Reparación</small><h3>Laptop y computadora</h3><p>Diagnóstico claro, autorización y pruebas finales.</p><span class="text-link">Ver reparación <svg class="icon"><use href="#i-arrow"></use></svg></span></a>
-      <a class="portal-card reveal delay-2" href="tienda.html"><span class="portal-icon"><svg class="icon"><use href="#i-bag"></use></svg></span><small>Tienda</small><h3>Productos tecnológicos</h3><p>Equipos, componentes, periféricos y conectividad.</p><span class="text-link">Ir a la tienda <svg class="icon"><use href="#i-arrow"></use></svg></span></a>
-      <a class="portal-card reveal" href="licencias.html"><span class="portal-icon"><svg class="icon"><use href="#i-key"></use></svg></span><small>Licencias</small><h3>Software original</h3><p>Windows, Microsoft 365, antivirus y más.</p><span class="text-link">Ver licencias <svg class="icon"><use href="#i-arrow"></use></svg></span></a>
-      <a class="portal-card reveal delay-1" href="soporte-remoto.html"><span class="portal-icon"><svg class="icon"><use href="#i-headset"></use></svg></span><small>Asistencia</small><h3>Soporte remoto</h3><p>Soluciones a distancia con sesión autorizada.</p><span class="text-link">Solicitar soporte <svg class="icon"><use href="#i-arrow"></use></svg></span></a>
-      <a class="portal-card reveal delay-2" href="seguimiento.html"><span class="portal-icon"><svg class="icon"><use href="#i-ticket"></use></svg></span><small>Seguimiento</small><h3>Estado de reparación</h3><p>Consulta el avance mediante tu código de servicio.</p><span class="text-link">Consultar equipo <svg class="icon"><use href="#i-arrow"></use></svg></span></a>
-    </div>
-  </div>
-</section><section class="section reviews-section">
-<div class="container">
-<div class="section-heading reveal">
-<div>
-<span class="section-kicker">Por qué elegirnos</span>
-<h2>Tecnología explicada de forma sencilla.</h2>
-</div>
-<p>Atendemos con claridad, recomendaciones realistas y soluciones pensadas para durar.</p>
-</div>
-<div class="value-grid">
-<article class="value-card reveal"><span>01</span><h3>Diagnóstico transparente</h3><p>Sabes qué sucede con tu equipo y qué alternativa conviene antes de autorizar el trabajo.</p></article>
-<article class="value-card reveal delay-1"><span>02</span><h3>Solución según presupuesto</h3><p>Priorizamos lo necesario y evitamos cambios de piezas que no aportan una mejora real.</p></article>
-<article class="value-card reveal delay-2"><span>03</span><h3>Acompañamiento posterior</h3><p>Te explicamos cómo cuidar el equipo y estamos disponibles para resolver dudas del servicio.</p></article>
-</div>
-</div>
-</section><section class="section compact-cta-section"><div class="container compact-cta reveal"><div><span class="section-kicker">Atención directa</span><h2>¿No sabes qué servicio elegir?</h2><p>Cuéntanos el problema por WhatsApp y te orientamos antes de llevar el equipo.</p></div><div class="compact-cta-actions"><a class="btn btn-primary" href="https://wa.me/51999999999?text=Hola%20CompuNix%2C%20necesito%20orientaci%C3%B3n" target="_blank" rel="noopener"><svg class="icon"><use href="#i-whatsapp"></use></svg>Consultar ahora</a><a class="btn btn-ghost" href="contacto.html">Ver contacto</a></div></div></section></main>
+</section><section class="section remote-steps"><div class="container"><div class="section-heading reveal"><div><span class="section-kicker">Sesión segura</span><h2>Así se realiza la asistencia.</h2></div><p>Tú puedes ver la pantalla durante todo el proceso y cerrar la conexión cuando lo necesites.</p></div><div class="step-cards"><article class="step-card reveal"><span>01</span><h3>Solicitas atención</h3><p>Envías el problema y coordinamos el horario.</p></article><article class="step-card reveal delay-1"><span>02</span><h3>Autorizas el acceso</h3><p>Instalas la herramienta indicada y aceptas la conexión.</p></article><article class="step-card reveal delay-2"><span>03</span><h3>Revisamos contigo</h3><p>Se realizan los ajustes mientras supervisas la sesión.</p></article><article class="step-card reveal delay-3"><span>04</span><h3>Finaliza la conexión</h3><p>La sesión termina y la herramienta puede retirarse.</p></article></div></div></section></main>
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
