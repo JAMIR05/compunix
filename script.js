@@ -445,20 +445,6 @@
 
   function init() {
     applyTheme(getInitialTheme(), false);
-    const currentFile = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
-    $$('#mainNav a').forEach(link => {
-      const href = (link.getAttribute('href') || '').split('#')[0].toLowerCase();
-      if (href === currentFile || (currentFile === '' && href === 'index.html')) {
-        link.classList.add('active');
-        link.setAttribute('aria-current', 'page');
-      }
-    });
-    const trackingParam = new URLSearchParams(window.location.search).get('codigo');
-    if (trackingParam && $('#trackingCode')) {
-      const normalizedCode = trackingParam.trim().toUpperCase();
-      $('#trackingCode').value = normalizedCode;
-      renderTracking(normalizedCode);
-    }
     const year = $('#currentYear');
     if (year) year.textContent = new Date().getFullYear();
     renderProducts();
